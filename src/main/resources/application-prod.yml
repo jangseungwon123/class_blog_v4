@@ -4,3 +4,10 @@ server:
       charset: utf-8
       force: true
   port: 5000
+
+# 로그 레벨의 개념
+# ERROR > WARN > INFO > DEBUG > TRACE
+logging:
+  level:
+    root: WARN
+    com.tenco.blog: INFO           # 운영 시 중요한 로그만
